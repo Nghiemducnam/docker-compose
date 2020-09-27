@@ -6,7 +6,7 @@ services:
     ports:
     - "3307:3306"
     volumes:
-    - /home/nam/Downloads/projects/compose-store-data:/var/lib/mysql
+    - /home/namnd/Downloads/data/compose-store-data:/var/lib/mysql
     networks:
       - my-net
     restart: unless-stopped
