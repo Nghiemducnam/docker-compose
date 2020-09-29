@@ -23,6 +23,14 @@ services:
       - my-net
     depends_on:
       - mysql-service
+  angular:
+    image: angular-test
+    ports:
+    - "4200:80"
+    expose:
+      - "80"
+    networks:
+      - my-net
 networks:
   my-net:
     driver: bridge
